@@ -1,0 +1,131 @@
+<form action="store" method="get ">
+<!-- <form action="store"> -->
+    <div>
+        <label for="name">Name </label>
+        <input type="text"name="name"id="name" placeholder="Enter Name" pattern="[A-Za-z]+" required minlength="4" maxlength="10">
+    </div>
+    <div>
+        <label for="Email">Email</label>
+        <input type="email"name="Email"id="Email" placeholder="Enter Email" size="20" multiple pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" required minlength="4" maxlength="20" >
+    </div>
+    <div>
+        <label for="Phone">Phone</label>
+        <input type="tel"name="Phone"id="Phone"  pattern="[0-9]+" placeholder="Enter Phonenumber"  required minlength="10" maxlength="10">
+    </div>
+    <div>
+        <label for="Password">Password</label>
+        <input type="password"name="Password"id="Password" placeholder="Enter Password"  required minlength="4" maxlength="10">
+    </div>
+    <div>
+        <label for="">Gender</label>
+        <input type="radio"name="Gender"id="male"  checked value="male"><label for="male">Male</label> 
+        <input type="radio"name="Gender"id="Female"   value="Female"><label for="Female">Female</label>
+    </div> 
+    <div>
+        <label for="gender2">Gender2</label>
+        <select name="Gender2" id="Gender2"  required>
+           <option value="male">i am a boy</option>  
+           <option value="Female">i am a girl</option>
+        </select>
+    </div>
+    <div>
+        <label for="">Languages</label>
+        <input type="checkbox"name="language1" id="language1"  value="Telugu"><label for="language1">Telugu</label>
+        <input type="checkbox"name="language2" id="language2" value="Hindi"><label for="language2">Hindi</label>
+        <input type="checkbox"name="language3" id="language3"  value="English"><label for="language3">English</label>
+    </div>
+    <div>
+        <label for="language">lang</label>
+        <select name="language" id="language"  required>
+            <option value="Telugu">Telugu</option>
+            <option value="Hindi">Hindi</option>
+            <option value="English">English</option>
+        </select>
+    </div>
+    <div>
+        <label for="DOB">Date of birth</label>
+        <input type="date"name="DOB" id="DOB"  required min="2000-01-01" max="2010-01-01">
+    </div>
+    <div>
+        <label for="wake up time">wake up time</label>
+        <input type="time" name="Wake up time" id="wake up time"  required min="09:00" max="18:00">
+    </div>
+    <div>
+        <label for="checkin">check in</label>
+        <input type="datetime-local" name="checkin" id="checkin"  required min="2000-01-01T09:00" max="2010-01-01T18:00">
+    </div>
+    <div>
+        <label for="checkout">check out</label>
+        <input type="datetime-local" name="checkout" id="checkout"  required min="2000-01-01T09:00" max="2010-01-01T18:00">
+    </div>
+    <div>
+        <label for="Birth month">Birth month</label>
+        <input type="month" name="Birth month" id="Birth month"  required min="2000-01" max="2000-06">
+    </div>
+    <div>
+        <label for=" week"> week</label>
+        <input type="week" name=" week" id=" week"  required min="2000-W01" max="2000-W04">
+    </div>
+    <div>
+        <label for="pin code">pin code</label>
+        <input type="number" name="pin code" id="pin code"  required min="100000" max="999999">
+    </div>
+    <div>
+        <label for="Age">Age</label>
+        <input type="range" name="Age" id="Age" required min="18" max="65" step="5">
+    </div>
+    <div>
+        <label for="favorite color">favorite color</label>
+        <input type="color" name="favorite color" id="favorite color"  required minlength="4" maxlength="20">
+    </div>
+    <div>
+        <label for="instagram">instagram</label>
+        <input type="url" name="instagram" id="instagram" required minlength="4" maxlength="20">
+    </div>
+    <div>
+        <label for="interest">interest</label>
+        <input type="text" list="interestlist" name="interest" id="interest"  required>
+        <datalist id="interestlist">
+            <option value="sports">sports</option>
+            <option value="biking">biking</option>
+            <option value="books">books</option>
+            <option value="dance">dance</option>
+        </datalist>
+    </div>
+    <div>
+        <label for="Profile">Profile</label>
+        <input type="file" name="Profile" id="Profile"  required>
+    </div>
+    <div>
+        <label for="video">video</label>
+        <input type="file" name="video" id="video   ">
+    </div>
+    <div>
+        <label for="image">image</label>
+        <input type="image" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR4X2OOJXb-gPgo7FD-9H9JWOzDWbgVTBofnA&s" width="200" name="image" id="image">
+    </div>
+    <div>
+        <label for="Hidden">Userid</label>
+        <input type="hidden"  name="Userid" id="Hidden" value="1234" >
+    </div>
+
+    <div>
+        <label for="Place">Place</label>
+        <select name="Place" id="Place"  required>
+           <option value="hyd">Hyderabad</option>  
+           <option value="ameerpet">ameerpet</option>
+           <option value="malakpet">malakpet</option>
+        </select>
+    </div>
+    <div>
+        <label for="address">address</label>
+        <textarea name="address" id="address"   required minlength="10" maxlength="200"></textarea>
+    </div>
+
+    <div>
+        <input type="submit"Value="Add User">
+         <input type="reset" value="Clear">
+    </div>
+    
+    
+</form>
