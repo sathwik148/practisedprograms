@@ -1,8 +1,8 @@
-<form action="store" method="get ">
+<form action="store" method="get">
 <!-- <form action="store"> -->
     <div>
         <label for="name">Name </label>
-        <input type="text"name="name"id="name" placeholder="Enter Name" pattern="[A-Za-z]+" required minlength="4" maxlength="10">
+        <input type="text"name="name"id="name" placeholder="Enter Name" autofocus pattern="[A-Za-z]+" required minlength="4" maxlength="10">
     </div>
     <div>
         <label for="Email">Email</label>
@@ -37,8 +37,9 @@
     <div>
         <label for="language">lang</label>
         <select name="language" id="language"  required>
-            <option value="Telugu">Telugu</option>
-            <option value="Hindi">Hindi</option>
+            <option value="">Select Language</option>
+            <option value="Telugu">Telugu </option>
+            <option value="Hindi" selected >Hindi</option>
             <option value="English">English</option>
         </select>
     </div>
@@ -80,7 +81,7 @@
     </div>
     <div>
         <label for="instagram">instagram</label>
-        <input type="url" name="instagram" id="instagram" required minlength="4" maxlength="20">
+        <input type="url" name="instagram" id="instagram" required minlength="4" maxlength="200">
     </div>
     <div>
         <label for="interest">interest</label>
@@ -98,11 +99,11 @@
     </div>
     <div>
         <label for="video">video</label>
-        <input type="file" name="video" id="video   ">
+        <input type="file" name="video" id="video">
     </div>
     <div>
         <label for="image">image</label>
-        <input type="image" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR4X2OOJXb-gPgo7FD-9H9JWOzDWbgVTBofnA&s" width="200" name="image" id="image">
+        <input type="image" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR4X2OOJXb-gPgo7FD-9H9JWOzDWbgVTBofnA&s" width="200" name="image" id="image" accept="image/jpeg">
     </div>
     <div>
         <label for="Hidden">Userid</label>
@@ -119,7 +120,7 @@
     </div>
     <div>
         <label for="address">address</label>
-        <textarea name="address" id="address"   required minlength="10" maxlength="200"></textarea>
+        <textarea name="address" id="address"   required minlength="1" maxlength="200"></textarea>
     </div>
 
     <div>

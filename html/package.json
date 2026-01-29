@@ -1,5 +1,17 @@
 {
   "dependencies": {
-    "http-server": "^14.1.1"
-  }
+    "http-server": "^14.1.1",
+    "rxjs": "^7.8.2"
+  },
+  "type": "module",
+  "name": "html",
+  "version": "1.0.0",
+  "description": "",
+  "main": "observables.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
 }
