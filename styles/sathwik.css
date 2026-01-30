@@ -63,3 +63,6 @@ a {
     border:1px solid lightgrey;
     margin:auto;
 }
+.card-image{
+    width:100%;
+}
