@@ -1,28 +1,10 @@
 {
   "users": [
     {
-      "id": "ab12",
-      "name": "joha",
-      "email": "john@gmail.com",
-      "phone": "9876543210"
-    },
-    {
-      "id": "bc23",
-      "name": "uday",
-      "email": "uday@gmail.com",
-      "phone": "7418529634"
-    },
-    {
-      "id": "75a5",
-      "name": "prathyusha",
-      "email": "prathyusha@gmail.com",
-      "phone": "7410258963"
-    },
-    {
-      "id": "cb5d",
+      "id": "4770",
       "name": "sathwik",
       "email": "sathwik@gmail.com",
-      "phone": "1234567890"
+      "phone": "7894561230"
     }
   ],
   "products": [
