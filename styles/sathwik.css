@@ -73,22 +73,174 @@ a {
     font-size:18px;
     color:#333;
 } */
-
+/* design start
 .card{
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    background-color: rgb(139, 223, 159);
+    /*background-color: rgb(139, 223, 159);
+    background-image: linear-gradient(to right,rgb(139, 223, 159),rgb(19, 160, 52));
     width:600px;
     border:1px solid lightgrey;
     margin:100px auto;
     padding:100px 50px;
-    border-radius: 14 px;
-    font-size: 20px;
+    border-radius: 14px;
+    /*font-size: 20px;
+    box-shadow: 0 0 20px rgb(71, 65, 65);
     
 }
 .card-heading{
-    font-size:  50px; 
+    font-size:  60px; 
     font-weight:bold;
 }
 .card-text{
+    margin-top: 30px;
     margin-bottom: 30px ;
+}
+.button{
+   border:1px solid lightgray;
+    padding: 20px 40px;
+    border-radius: 40px;
+    font-size:20px;
+    font-weight: bold;
+    background-color: lightgray;
+}
+
+design end*/
+
+
+/* design start 
+.card{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    width: 600px;
+    border: 1px solid lightgray;
+    margin: 100px auto;
+    border-radius: 14px;
+}
+.card-body{
+    padding: 40px;
+
+}
+.card-heading{
+    font-size: 20px;
+}
+.card-text{
+    margin-top: 30px;
+    margin-bottom: 30px;
+    font-size: 20px;
+}
+.card-img{
+    width: 100px;
+    border-radius: 50%;
+    margin: 0 50px;
+}
+
+.card-footer{
+    padding: 40px;
+    border-top: 1px solid lightgrey ;
+}
+
+.card-link{
+    text-decoration: none;
+    font-size : 20px
+}
+design end  */
+/* 
+.card{
+    border: 1px solid lightgrey;
+    width: 600px;
+    margin: 100px auto;
+    border-radius: 14px;
+}
+.card-img{
+    width: 100%;
+    border-top-right-radius: 14px;
+    border-top-left-radius: 14px;
+
+}
+.card-body{
+    padding: 30px;
+}
+.card-title{
+    text-transform:uppercase;
+    letter-spacing: 2px;
+    font-size: 18px;
+}
+
+.card-heading{
+    margin:30px 0 ;
+    font-size:50px;
+    font-weight: 200;
+} */
+
+/* css7 */
+/* .card{
+    margin:100px auto;
+    width:600px;
+    /* background-color: red;
+    padding:50px;
+    position:sticky;
+    top:50px; 
+    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    position: relative;
+    border:1px solid lightgray;
+    padding:50px;
+}
+.card-img{
+    width:100%;
+    border-radius: 20px;
+}
+.card-heading{
+    font-size:25px;
+    position: absolute;
+    top:150px;
+    text-align: center;
+    width: 100%;
+    color: antiquewhite;
+    
+} */
+
+/* css7 pratice one img 
+.card{
+    width:600px;
+    margin: 200px auto;
+    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    position:relative;
+}
+.card-image{
+    width:100%;
+}
+.card-title{
+    font-size: 30px;
+    font-weight:bold;
+    color: antiquewhite;
+}
+.card-title-large{
+    font-size:  40px;
+    font-weight:bold;
+    color: antiquewhite;
+}
+.card-text{
+   font-size:10px; 
+   margin-top: 20px;
+   color: antiquewhite;
+}
+.card-heading{
+    position:absolute;
+    top:150px;
+}
+done */
+
+/* css8 pratice */
+.card{
+    display:flex;
+    gap:10px;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    height:700px;
+    background-color: red;
+}
+.card-item{
+    background-color:lightgreen;
+    font-size:100px;
+    padding:10px;
+    width:200px;
 }
