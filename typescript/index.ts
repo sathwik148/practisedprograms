@@ -136,14 +136,14 @@
 //     }
 // }
 
-interface User{
-    id:number;
-    name:string;
-    email:string;
-    phone:string;
-    age:number;
+// interface User{
+//     id:number;
+//     name:string;
+//     email:string;
+//     phone:string;
+//     age:number;
     
-}
+// }
 
 // abstract class Human{
 //     abstract name:string;
@@ -216,17 +216,21 @@ interface User{
 // let t= new Test()
 
 
+// array list we do is map , filter, forEach, every, some and find,findlast, findIndex, findLastIndex, includes,indexof
+// let user1: User ={ "id": 1, "name": "sathwik", "email": "sathwik@gmail.com", "phone": "9392073857", "age": 21 }
+// let user2: User = { "id": 2, "name": "sunny", "email": "sunny@gmail.com", "phone": "9392073858", "age": 26 }
+// let user3: User = { "id": 3, "name": "bujji", "email": "bujji@gmail.com", "phone": "9392073859", "age": 23 }
+// let user4: User = { "id": 4, "name": "sathwik2", "email": "sathwik3@gmail.com", "phone": "9392073860", "age": 18 }
+// console.log(user1);
+// console.log(user2);
+// console.log(user3);
+// console.log(user4);
+// let users: User[] = [user1, user2, user3, user4]
 
-
-let user1: User ={ "id": 1, "name": "sathwik", "email": "sathwik@gmail.com", "phone": "9392073857", "age": 21 }
-let user2: User = { "id": 2, "name": "sunny", "email": "sunny@gmail.com", "phone": "9392073858", "age": 26 }
-let user3: User = { "id": 3, "name": "sathwik1", "email": "sathwik2@gmail.com", "phone": "9392073859", "age": 23 }
-let user4: User = { "id": 4, "name": "sathwik2", "email": "sathwik3@gmail.com", "phone": "9392073860", "age": 18 }
-console.log(user1);
-console.log(user2);
-console.log(user3);
-console.log(user4);
-let users: User[] = [user1, user2, user3, user4]
+// users.forEach(user => {
+//     console.log(user);
+// });
+    
 
 // let modifiedUsers : User[] = users.map(user => {
 //     user.name = user.name + "gvs"
@@ -265,8 +269,82 @@ let users: User[] = [user1, user2, user3, user4]
 // let isMajorAvailable = users.some(user => user.age >25)
 // console.log(isMajorAvailable);
 
+//to find one object from array if we found it object will return otherwise  it will return undefined
+// let newuser = users.find(user => user.name == 'sathwik')
+// console.log(newuser);
+
+// to given object available in array or not
+// let isAvailable = users.includes(user1)
+// console.log(isAvailable);
+
+
+// Assignment
+interface Municipality{
+    municipalityId:number;
+    name:string;
+    code:string;
+    
+}
+interface District{
+    districtId:number;
+    name:string;
+    code:string;
+    municipalities:Municipality[];
+}
+interface state{
+    stateId:number;
+    name:string;
+    code:string
+    districts:District[];
+}
+
+let municipality1:Municipality={municipalityId:1,name:"Tenali",code:"TNL"}
+let municipality2:Municipality={municipalityId:2,name:"Nellore",code:"NLR"}
+let municipality3:Municipality={municipalityId:3,name:"Hyderabad",code:"HYD"}
+let municipality4:Municipality={municipalityId:4,name:"Chennai",code:"CHN"}
+
+let district1:District={districtId:1,name:"Guntur",code:"GNT",municipalities:[municipality1]}
+let district2:District={districtId:2,name:"Nellore",code:"NLR",municipalities:[municipality2]}
+let district3:District={districtId:3,name:"Hyderabad",code:"HYD",municipalities:[municipality3]}
+let district4:District={districtId:4,name:"Ranga Reddy",code:"RR",municipalities:[municipality4]}
+
+let state1:state={stateId:1,name:"Andhra Pradesh",code:"AP",districts:[district1,district2]}
+let state2:state={stateId:2,name:"Telangana",code:"TS",districts:[district3,district4]}
+// let state3:state={stateId:3,name:"Karnataka",code:"KA"}
+// let state4:state={stateId:4,name:"Tamil Nadu",code:"TN"}
+// console.log(state1);
+
+let states:state[]=[state1,state2]
+
+let district5:District={districtId:5,name:"Krishna",code:"KRN",municipalities:[]}
+
+let newstates = states.map(state =>{
+    if(state.stateId === 2){
+        state.districts.push(district5)
+    }
+    return state
+})
+
+console.log(newstates);
 
 
 
 
+// states.forEach(state =>{
+//     state.districts.forEach(district =>{
+//         district.municipalities.forEach(municipality =>{
+//             console.log(state.name+" "+district.name+" "+municipality.name);
+//         })
+//     })
+// }) 
+            
 
+// let states:state[]=[state1,state2]
+// let districts:District[]=[district1,district2,district3,district4]
+// let municipalities:Municipality[]=[municipality1,municipality2,municipality3,municipality4]
+
+// municipalities.forEach(municipality =>{
+//     let district:District | undefined = districts.find(district => district.districtId === municipality.municipalityId)
+//     let state:state | undefined = states.find(state => state.stateId === district?.stateId)
+//     console.log(municipality.name + " " + municipality.code + " " + district?.name+" "+state?.name);
+// })
